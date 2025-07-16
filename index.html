@@ -1,10 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1XTFM65VS2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1XTFM65VS2');
+    </script>
     <meta charset="UTF-8">
-    <title>Hello World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font and Stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,bold,900,600">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <title>ClearAI-Demo</title>
+    <style>
+        .text-input {
+            width: 350px; 
+            display: inline-block;
+            font-size: 10pt;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, world!</h1>
+    <div class="global_container">
+        <div class="section">
+            <h1>ClearAI: AI-Driven Speech Enhancement for Patients with Hypophonia</h1>
+            <div class="boxed">
+                <p>Hypophonia is a common speech symptom related to Parkinson’s disease, affecting human comprehension and effective communication. Specifically, hypophonic speech is characterized by its low volume and breathy voice quality, which makes it challenging to be heard and understood by both people and voice-control systems, especially in noisy environments.
+                <br>    
+                    Conventional speech enhancement techniques, primarily focusing on amplifying audio power or canceling environmental noise, fall short in improving the intelligibility and perception for hypophonic speech. To fill the gap of enhancing hypophonic speech, we present ClearAI, an innovative AI-powered technique to improve speech quality for individuals suffering from hypophonia. ClearAI first leverages voice conversion technology to create a parallel dataset composed of healthy and corresponding hypophonic speech samples. Moreover, ClearAI incorporates a predictive model trained on augmented parallel data to estimate the optimal audio style from hypophonic speech, to strengthen the audio intensity and enhance the speech patterns.
+                <br>
+                    For privacy concerns, we only list audio samples from public datasets.
+                <br>
+            </div>
+
+            <h2>ClearAI Speech Samples</h2>
+            <div style="margin-top: 5em;">
+                <table>
+                    <tr>
+                        <td><h3>Raw</h3></td>
+                        <td><h3>Equalizer</h3></td>
+                        <td><h3>SpeechBrain</h3></td>
+                        <td><h3>SEGAN</h3></td>
+                        <td><h3>AudioSR</h3></td>
+                        <td><h3>VoiceFixer</h3></td>
+                        <td><h3>ClearAI</h3></td>
+                    </tr>
+                    <!-- 1 -->
+                    <tr>
+                        <td><audio controls>
+                            <source src="./samples/raw/1.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="./samples/equalizer/1.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="./samples/speechbrain/1.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="samples/segan/1.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="samples/audiosr/1.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="samples/voicefixer/1.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="samples/clearai/1.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                    </tr>
+                    <!-- 2 -->
+                    <tr>
+                        <td><audio controls>
+                            <source src="./samples/raw/2.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="./samples/equalizer/2.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="./samples/speechbrain/2.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="samples/segan/2.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="samples/audiosr/2.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="samples/voicefixer/2.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="samples/clearai/2.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                    </tr>
+                    <!-- 3 -->
+                    <tr>
+                        <td><audio controls>
+                            <source src="./samples/raw/3.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="./samples/equalizer/3.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="./samples/speechbrain/3.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="samples/segan/3.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="samples/audiosr/3.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="samples/voicefixer/3.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="samples/clearai/3.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                    </tr>
+                    <!-- 4 -->
+                    <tr>
+                        <td><audio controls>
+                            <source src="./samples/raw/4.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="./samples/equalizer/4.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="./samples/speechbrain/4.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="samples/segan/4.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="samples/audiosr/4.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="samples/voicefixer/4.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                        <td><audio controls>
+                            <source src="samples/clearai/4.wav" type="audio/wav">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio></td>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>
