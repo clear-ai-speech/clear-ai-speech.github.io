@@ -37,14 +37,50 @@
     <div class="global_container">
         <div class="section">
             <h1>ClearAI: AI-Driven Speech Enhancement for Patients with Hypophonia</h1>
-            <div class="boxed">
-                <p>Hypophonia is a common speech symptom related to Parkinson’s disease, affecting human comprehension and effective communication. Specifically, hypophonic speech is characterized by its low volume and breathy voice quality, which makes it challenging to be heard and understood by both people and voice-control systems, especially in noisy environments.
-                <br>    
-                    Conventional speech enhancement techniques, primarily focusing on amplifying audio power or canceling environmental noise, fall short in improving the intelligibility and perception for hypophonic speech. To fill the gap of enhancing hypophonic speech, we present ClearAI, an innovative AI-powered technique to improve speech quality for individuals suffering from hypophonia. ClearAI first leverages voice conversion technology to create a parallel dataset composed of healthy and corresponding hypophonic speech samples. Moreover, ClearAI incorporates a predictive model trained on augmented parallel data to estimate the optimal audio style from hypophonic speech, to strengthen the audio intensity and enhance the speech patterns.
-                <br>
-                    We only list audio samples from public datasets for privacy concerns.
-                <br>
+            <!-- Author information -->
+                <div class="authors" style="text-align:center;">    
+                <p>
+                  Yuanda Wang<sup>1</sup>, &nbsp;&nbsp;
+                  Qiben Yan<sup>1</sup>,&nbsp;&nbsp;
+                  Thea Knowles<sup>1</sup>,&nbsp;&nbsp;
+                  Daryn Cushnie-Sparrow<sup>2</sup>,&nbsp;&nbsp;
+                  Scott Adams<sup>2</sup>
+                </p>
+                <p class="affiliations" style="text-align:center;">
+                  <sup>1</sup>Michigan State University, East Lansing, USA &nbsp;&nbsp;
+                  <sup>2</sup>Western University, London, Canada
+                </p>
+              </div>
+              <div style="text-align:center; margin:3em 0;">
+                <img src="./images/msu.png" alt="示意图 1" style="max-width:100px; height:auto; margin:0 10px;">
+                <img src="./images/western.png" alt="示意图 2" style="max-width:120px; height:auto; margin:0 10px;">
             </div>
+            <!-- Abstract section for an academic-style demo page -->
+            <section id="abstract" class="boxed">
+                <h2>Abstract</h2>
+            
+                <p>
+                Hypophonia—characterized by unusually low volume and a breathy voice quality—is a prevalent speech impairment
+                in Parkinson’s disease that severely limits intelligibility and effective communication. The weak acoustic
+                signal not only challenges human listeners but also degrades the performance of voice-controlled systems,
+                especially under noisy conditions.
+                </p>
+            
+                <p>
+                Conventional enhancement methods typically amplify overall loudness or suppress background noise, yet they
+                fall short of restoring the clarity and naturalness required for hypophonic speech. To bridge this gap, we
+                introduce <strong>ClearAI</strong>, an AI-driven framework purpose-built to improve speech quality for
+                individuals with hypophonia. ClearAI leverages voice-conversion techniques to construct a parallel corpus of
+                healthy and hypophonic utterances. A predictive model, trained on this augmented dataset, estimates an
+                optimal speech style that simultaneously strengthens vocal intensity and refines prosodic patterns while
+                preserving speaker identity.
+                </p>
+            
+                <p>
+                <strong>We only list audio samples from public datasets for privacy concerns.</strong>
+                </p>
+            </section>
+  
 
             <h2>ClearAI Speech Samples</h2>
             <div style="margin-top: 5em;">
@@ -187,6 +223,8 @@
             </div>
         </div>
     </div>
-    
+    <p class="affiliations">
+        All research involving human participants was approved by the Institutional Review Board (IRB).
+    </p>
 </body>
 </html>

@@ -4,6 +4,17 @@ body {
     padding: 0;
 }
 
+
+.affiliations {
+    /* 整块水平居中 */
+    margin: 0 auto;
+  
+    /* 文本居中 */
+    text-align: center;
+  
+    /* 可选：控制最大宽度，让内容紧凑 */
+    max-width: 1800px;
+  }
 .global_container {
     width: 100%;
     max-width: 1800px; /* 增加最大宽度到1600px */
@@ -229,5 +240,12 @@ p, ul {
 }
 
 audio {
-    width:240px; /* 将audio控件的宽度调整为350px */
+    width:220px; /* 将audio控件的宽度调整为350px */
 }
+
+/* 放在样式表比较靠后的位置 */
+.authors p {
+    margin: 0;          /* 可选：去掉默认上下外距 */
+    text-align: center; /* 明确指定，不怕别的 p 规则干扰 */
+  }
+  
