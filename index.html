@@ -36,7 +36,7 @@
 <body>
     <div class="global_container">
         <div class="section">
-            <h1>ClearAI: AI-Driven Speech Enhancement for Patients with Hypophonia</h1>
+            <h1>CLEARAI: A Deep Neural Speech Enhancement Model for Hypophonic Speech</h1>
             <!-- Author information -->
                 <div class="authors" style="text-align:center;">    
                 <p>
@@ -69,9 +69,9 @@
                 <p>
                 Conventional enhancement methods typically amplify overall loudness or suppress background noise, yet they
                 fall short of restoring the clarity and naturalness required for hypophonic speech. To bridge this gap, we
-                introduce <strong>ClearAI</strong>, an AI-driven framework purpose-built to improve speech quality for
+                introduce <strong>ClearAI</strong>, a deep neural network based framework purpose-built to improve speech quality for
                 individuals with hypophonia. ClearAI leverages voice-conversion techniques to construct a parallel corpus of
-                healthy and hypophonic utterances. A predictive model, trained on this augmented dataset, estimates an
+                non-hypophonic and hypophonic utterances. A predictive model, trained on this augmented dataset, estimates an
                 optimal speech style that simultaneously strengthens vocal intensity and refines prosodic patterns while
                 preserving speaker identity.
                 </p>
@@ -82,150 +82,147 @@
             </section>
   
 
-            <h2>ClearAI Speech Samples</h2>
-            <div style="margin-top: 5em;">
-                <table>
-                    <tr>
-                        <td><h3>Raw</h3></td>
-                        <td><h3>Equalizer</h3></td>
-                        <td><h3>SpeechBrain</h3></td>
-                        <td><h3>SEGAN</h3></td>
-                        <td><h3>AudioSR</h3></td>
-                        <td><h3>VoiceFixer</h3></td>
-                        <td><h3>ClearAI</h3></td>
-                        <td><h3>Transcript</h3></td>
-                    </tr>
-                    <!-- 1 -->
-                    <tr>
-                        <td><audio controls>
-                            <source src="./samples/raw/1.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="./samples/equalizer/1.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="./samples/speechbrain/1.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="samples/segan/1.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="samples/audiosr/1.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="samples/voicefixer/1.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="samples/clearai/1.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td>“We eat eggs every Easter”</td>
-                    </tr>
-                    <!-- 2 -->
-                    <tr>
-                        <td><audio controls>
-                            <source src="./samples/raw/2.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="./samples/equalizer/2.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="./samples/speechbrain/2.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="samples/segan/2.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="samples/audiosr/2.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="samples/voicefixer/2.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="samples/clearai/2.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td>“My mama makes lemon muffins.”</td>
-                    </tr>
-                    <!-- 3 -->
-                    <tr>
-                        <td><audio controls>
-                            <source src="./samples/raw/3.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="./samples/equalizer/3.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="./samples/speechbrain/3.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="samples/segan/3.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="samples/audiosr/3.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="samples/voicefixer/3.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="samples/clearai/3.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td>“Peter will keep at the peak.”</td>
-                    </tr>
-                    <!-- 4 -->
-                    <tr>
-                        <td><audio controls>
-                            <source src="./samples/raw/4.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="./samples/equalizer/4.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="./samples/speechbrain/4.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="samples/segan/4.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="samples/audiosr/4.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="samples/voicefixer/4.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td><audio controls>
-                            <source src="samples/clearai/4.wav" type="audio/wav">
-                            Your browser does not support the <code>audio</code> element.
-                        </audio></td>
-                        <td>“The blue spot is on the key again.  How hard did he hit him?”</td>
-                    </tr>
-                </table>
-                
-            </div>
+            <h2>ClearAI Speech Samples Demo</h2>
+
+<div style="margin-top: 5em;">
+
+    <!-- Hypophonic -->
+    <div style="background:#f0f0f0; padding:10px; margin-bottom:10px; font-size:18px;">
+        <strong>Hypophonic Speech</strong>
+    </div>
+
+    <table>
+        <tr>
+            <td><h3>Raw</h3></td>
+            <td><h3>Equalizer</h3></td>
+            <td><h3>SpeechBrain</h3></td>
+            <td><h3>SEGAN</h3></td>
+            <td><h3>AudioSR</h3></td>
+            <td><h3>VoiceFixer</h3></td>
+            <td><h3>ClearAI</h3></td>
+            <td><h3>Transcript</h3></td>
+        </tr>
+
+        <!-- 5 -->
+        <tr>
+            <td><audio controls><source src="./samples/raw/5.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="./samples/equalizer/5.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="./samples/speechbrain/5.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/segan/5.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/audiosr/5.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/voicefixer/5.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/clearai/5.wav" type="audio/wav"></audio></td>
+            <td>“Why is that all the people in your portraits look so sad.”</td>
+        </tr>
+
+        <!-- 6 -->
+        <tr>
+            <td><audio controls><source src="./samples/raw/6.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="./samples/equalizer/6.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="./samples/speechbrain/6.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/segan/6.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/audiosr/6.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/voicefixer/6.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/clearai/6.wav" type="audio/wav"></audio></td>
+            <td>“The first health revolution was the control of infection.”</td>
+        </tr>
+
+        <!-- 7 -->
+        <tr>
+            <td><audio controls><source src="./samples/raw/7.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="./samples/equalizer/7.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="./samples/speechbrain/7.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/segan/7.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/audiosr/7.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/voicefixer/7.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/clearai/7.wav" type="audio/wav"></audio></td>
+            <td>“All the people decided to go on a diet at the same time.”</td>
+        </tr>
+
+        <!-- 8 -->
+        <tr>
+            <td><audio controls><source src="./samples/raw/8.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="./samples/equalizer/8.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="./samples/speechbrain/8.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/segan/8.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/audiosr/8.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/voicefixer/8.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/clearai/8.wav" type="audio/wav"></audio></td>
+            <td>“It is so different from the flowers that needs its own special terms.”</td>
+        </tr>
+    </table>
+
+
+    <!-- Dysarthric -->
+    <div style="background:#f0f0f0; padding:10px; margin:25px 0 10px; font-size:18px;">
+        <strong>Dysarthric Speech</strong>
+    </div>
+
+    <table>
+        <tr>
+            <td><h3>Raw</h3></td>
+            <td><h3>Equalizer</h3></td>
+            <td><h3>SpeechBrain</h3></td>
+            <td><h3>SEGAN</h3></td>
+            <td><h3>AudioSR</h3></td>
+            <td><h3>VoiceFixer</h3></td>
+            <td><h3>ClearAI</h3></td>
+            <td><h3>Transcript</h3></td>
+        </tr>
+
+        <!-- 原 1〜4 放在后面 -->
+        <!-- 1 -->
+        <tr>
+            <td><audio controls><source src="./samples/raw/1.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="./samples/equalizer/1.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="./samples/speechbrain/1.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/segan/1.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/audiosr/1.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/voicefixer/1.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/clearai/1.wav" type="audio/wav"></audio></td>
+            <td>“We eat eggs every Easter”</td>
+        </tr>
+
+        <!-- 2 -->
+        <tr>
+            <td><audio controls><source src="./samples/raw/2.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="./samples/equalizer/2.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="./samples/speechbrain/2.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/segan/2.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/audiosr/2.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/voicefixer/2.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/clearai/2.wav" type="audio/wav"></audio></td>
+            <td>“My mama makes lemon muffins.”</td>
+        </tr>
+
+        <!-- 3 -->
+        <tr>
+            <td><audio controls><source src="./samples/raw/3.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="./samples/equalizer/3.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="./samples/speechbrain/3.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/segan/3.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/audiosr/3.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/voicefixer/3.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/clearai/3.wav" type="audio/wav"></audio></td>
+            <td>“Peter will keep at the peak.”</td>
+        </tr>
+
+        <!-- 4 -->
+        <tr>
+            <td><audio controls><source src="./samples/raw/4.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="./samples/equalizer/4.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="./samples/speechbrain/4.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/segan/4.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/audiosr/4.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/voicefixer/4.wav" type="audio/wav"></audio></td>
+            <td><audio controls><source src="samples/clearai/4.wav" type="audio/wav"></audio></td>
+            <td>“The blue spot is on the key again. How hard did he hit him?”</td>
+        </tr>
+
+    </table>
+
+</div>
+
         </div>
     </div>
     <p class="affiliations">
